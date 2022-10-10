@@ -12,6 +12,7 @@ namespace ALCARS.Models
         public DbSet<Carro> carro { get; set; }
         public DbSet<Modelo> modelo { get; set; }
         public DbSet<Funcionario> funcionario { get; set; }
+        public DbSet<ALCARS.Models.CarroAlugado> CarroAlugado { get; set; }
     }
 
 }

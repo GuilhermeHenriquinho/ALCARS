@@ -27,17 +27,22 @@ namespace ALCARS.Models
         [Display(Name = "KM Rodado: ")]
         public DateTime kmRodado { get; set; }
 
-        [StringLength(14)]
         [Required(ErrorMessage = "O campo é obrigatório.")]
         [Display(Name = "É usado?: ")]
         public Boolean usado { get; set; }
+
+        public Boolean alugado { get; set; }
 
         [Required(ErrorMessage = "O campo Modelo é obrigatório.")]
         [Display(Name = "Modelo: ")]
         public Modelo modelo { get; set; }
         public int idModelo { get; set; }
 
+        public void alugar()
+        {
+            this.alugado = true;
 
+        }
 
 
     }
